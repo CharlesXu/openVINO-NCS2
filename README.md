@@ -69,13 +69,13 @@ cd /opt/intel/computer_vision_sdk/install_dependencies/
 ```
 
 ### Test the installation
-#NOW Plug in the Neural Compute Stick to a USB port on your compute
+NOW Plug in the Neural Compute Stick to a USB port on your compute
 ```
 cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_prerequisites/
 ./install_prerequisites.sh
 ```
 
-### Run Demos:
+### Run Demos
 ```
 #Demo No1
 cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
@@ -87,7 +87,7 @@ cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
 ./demo_security_barrier_camera.sh -d MYRIAD
 ```
 
-### Reference
+### References
 * https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_linux.html
 * https://software.intel.com/en-us/openvino-toolkit/choose-download?_ga=2.209152978.1128788212.1560861573-1590426351.1560682722
 * https://github.com/PINTO0309/OpenVINO-YoloV3
