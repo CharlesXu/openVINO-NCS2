@@ -61,7 +61,8 @@ uname -r
 4.15.0-42-generic #<--- display kernel version sample
 
 ### Configure Neural Compute Stick USB Drive
-```source /opt/intel/computer_vision_sdk/bin/setupvars.sh
+```
+source /opt/intel/computer_vision_sdk/bin/setupvars.sh
 cd /opt/intel/computer_vision_sdk/install_dependencies/
 ./install_NCS_udev_rules.sh 
 ```
@@ -85,7 +86,7 @@ cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
 ./demo_security_barrier_camera.sh -d MYRIAD
 ```
 
-# Reference
+### Reference
 * https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_linux.html
 * https://software.intel.com/en-us/openvino-toolkit/choose-download?_ga=2.209152978.1128788212.1560861573-1590426351.1560682722
 * https://github.com/PINTO0309/OpenVINO-YoloV3
