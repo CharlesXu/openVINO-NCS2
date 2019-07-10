@@ -59,6 +59,7 @@ cd /opt/intel/computer_vision_sdk/install_dependencies/
 sudo -E su
 uname -r
 4.15.0-42-generic #<--- display kernel version sample
+```
 
 ### Configure Neural Compute Stick USB Drive
 ```
