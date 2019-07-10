@@ -66,21 +66,21 @@ cd /opt/intel/computer_vision_sdk/install_dependencies/
 ./install_NCS_udev_rules.sh 
 ```
 
-###Test the installation
+### Test the installation
 #NOW Plug in the Neural Compute Stick to a USB port on your compute
 ```
 cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_prerequisites/
 ./install_prerequisites.sh
 ```
 
-###Run Demos:
-#Demo No1
+### Run Demos:
 ```
+#Demo No1
 cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
 ./demo_squeezenet_download_convert_run.sh -d MYRIAD
 ```
-#Demo No2 - Traffic Camera (Object Detection)
 ```
+#Demo No2 - Traffic Camera (Object Detection)
 cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
 ./demo_security_barrier_camera.sh -d MYRIAD
 ```
