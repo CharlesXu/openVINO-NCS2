@@ -86,12 +86,12 @@ cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_prere
 
 ### Run Demos
 ```bash
-#Demo No1
+# Demo No1
 cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
 ./demo_squeezenet_download_convert_run.sh -d MYRIAD
 ```
-```
-#Demo No2 - Traffic Camera (Object Detection)
+```bash
+# Demo No2 - Traffic Camera (Object Detection)
 cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
 ./demo_security_barrier_camera.sh -d MYRIAD
 ```
