@@ -63,9 +63,9 @@ uname -r
 4.15.0-42-generic #<--- display kernel version sample
 ```
 
-5.【Optional execution】Change Virtual Machines USB Settings (Only for Virtual Box)<br/>
-Add two new USB Filters:
+5.【Optional execution】Change Virtual Machines USB Settings (Only for Virtual Box)
 ```
+Add two new USB Filters:
 Name: USB2 | Vector ID: 03e7
 Name: USB3 | Vector ID: 040e
 ```
