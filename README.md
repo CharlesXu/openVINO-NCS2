@@ -1,4 +1,4 @@
-# OpenVINO-NCS2
+# OpenVINO - Intel® Neural Compute Stick 2
  
 ### Inspired and based on
 * **https://github.com/gplast/OpenVINO-YOLO**
@@ -23,10 +23,10 @@ rm l_openvino_toolkit_p_2018.5.445.tgz
 cd l_openvino_toolkit_p_2018.5.445
 sudo -E ./install_cv_sdk_dependencies.sh
 
-## GUI version installer
+# GUI version installer
 sudo ./install_GUI.sh
-
 ```
+
 2.Configure the Model Optimizer. Execute the following commands:
 ```bash
 cd /opt/intel/computer_vision_sdk/install_dependencies
@@ -38,7 +38,8 @@ source ~/.bashrc
 cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_prerequisites
 sudo ./install_prerequisites.sh
 ```
-3.Additional installation steps for the Intel® Movidius™ Neural Compute Stick v1 and Intel® Neural Compute Stick v2
+
+3.Additional installation steps
 ```bash
 sudo usermod -a -G users "$(whoami)"
 cat <<EOF > 97-usbboot.rules
@@ -53,6 +54,7 @@ sudo udevadm trigger
 sudo ldconfig
 rm 97-usbboot.rules
 ```
+
 4.【Optional execution】 Additional installation steps for processor graphics (GPU)
 ```bash
 cd /opt/intel/computer_vision_sdk/install_dependencies/
@@ -61,22 +63,29 @@ uname -r
 4.15.0-42-generic #<--- display kernel version sample
 ```
 
-### Configure Neural Compute Stick USB Drive
+5.【Optional execution】Change Virtual Machines USB Settings (Only for Virtual Box)
+Add two new USB Filters:
 ```
+Name: USB2 | Vector ID: 03e7
+Name: USB3 | Vector ID: 040e
+```
+
+### Configure Neural Compute Stick USB Drive
+```bash
 source /opt/intel/computer_vision_sdk/bin/setupvars.sh
 cd /opt/intel/computer_vision_sdk/install_dependencies/
 ./install_NCS_udev_rules.sh 
 ```
 
 ### Test the installation
-NOW Plug in the Neural Compute Stick to a USB port on your compute
-```
+NOW Plug in the Neural Compute Stick to a USB port on your computer
+```bash
 cd /opt/intel/computer_vision_sdk/deployment_tools/model_optimizer/install_prerequisites/
 ./install_prerequisites.sh
 ```
 
 ### Run Demos
-```
+```bash
 #Demo No1
 cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
 ./demo_squeezenet_download_convert_run.sh -d MYRIAD
@@ -88,6 +97,7 @@ cd /opt/intel/computer_vision_sdk/deployment_tools/demo/
 ```
 
 ### References
-* https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_linux.html
-* https://software.intel.com/en-us/openvino-toolkit/choose-download?_ga=2.209152978.1128788212.1560861573-1590426351.1560682722
-* https://github.com/PINTO0309/OpenVINO-YoloV3
+* **https://docs.openvinotoolkit.org/latest/_docs_install_guides_installing_openvino_linux.html**
+* **https://software.intel.com/en-us/openvino-toolkit/choose-download?_ga=2.209152978.1128788212.1560861573-1590426351.1560682722**
+* **https://github.com/PINTO0309/OpenVINO-YoloV3**
+
